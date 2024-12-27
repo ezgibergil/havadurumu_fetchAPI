@@ -1,0 +1,32 @@
+<!--Bir seyahat planlama uygulaması geliştiriyorsunuz. 
+Kullanıcı, seyahat etmek istediği şehrin hava durumunu öğrenmek istiyor. 
+Fetch api kullanarak bir şehir adı girildiğinde o şehirdeki güncel hava durumu bilgilerini çekmelisiniz-->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyahat Planlama - Hava Durumu</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #weatherResult { margin-top: 20px; }
+        .weather-info { padding: 15px; border: 1px solid #ccc; }
+        .weather-info h3 { margin: 0; }
+        .error-message { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Seyahat Planlama Uygulaması</h1>
+    
+    <div>
+        <label for="cityInput">Şehir adı girin:</label>
+        <input type="text" id="cityInput" placeholder="Şehir adı">
+        <button id="getWeatherBtn">Hava Durumunu Öğren</button>
+    </div>
+
+    <div id="weatherResult"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
